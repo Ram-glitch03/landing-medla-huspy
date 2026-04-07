@@ -9,7 +9,7 @@ export default function Hero() {
           <div className="ticker-content flex gap-8 whitespace-nowrap">
             {[...Array(10)].map((_, i) => (
               <h1 key={i} className="text-3xl md:text-5xl font-display font-medium uppercase tracking-tight">
-                Seguridad Jurídica <span className="text-accent">•</span> Excelencia Inmobiliaria <span className="text-accent">•</span>
+                Compra con Cero Riesgos Legales <span className="text-accent">•</span> Excelencia Inmobiliaria <span className="text-accent">•</span>
               </h1>
             ))}
           </div>
@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="ticker-content flex gap-8 whitespace-nowrap" style={{ animationDirection: 'reverse' }}>
             {[...Array(10)].map((_, i) => (
               <h1 key={i} className="text-3xl md:text-5xl font-display font-medium uppercase tracking-tight">
-                Colaboración Huspy & MEDLA <span className="text-accent">•</span> Tu Futuro Asegurado <span className="text-accent">•</span>
+                Alianza Huspy & MEDLA <span className="text-accent">•</span> Tu Inversión Blindada <span className="text-accent">•</span>
               </h1>
             ))}
           </div>
