@@ -50,7 +50,7 @@ export default function AboutUs() {
             </p>
 
             <a
-              href="https://medla-asesores.com/agenda-tu-cita/" target="_blank" rel="noopener noreferrer"
+              href="#contact"
               className="inline-flex items-center justify-center bg-navy text-white px-10 py-4 rounded-full font-bold hover:bg-gold hover:text-navy transition-all duration-300 w-fit hover:scale-105 active:scale-95 shadow-md"
             >
               Conoce al Equipo

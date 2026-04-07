@@ -9,7 +9,7 @@ import Services from "./components/Services";
 import FunFacts from "./components/FunFacts";
 import FAQ from "./components/FAQ";
 import Blog from "./components/Blog";
-import Footer from "./components/Footer";
+import Contact from "./components/Contact";\nimport Footer from "./components/Footer";
 
 export default function App() {
   return (
@@ -27,7 +27,7 @@ export default function App() {
         <FAQ />
         <Blog />
       </main>
-      <Footer />
+      <Contact />\n      <Footer />
     </div>
   );
 }
