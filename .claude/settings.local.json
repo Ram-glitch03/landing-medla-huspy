@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/Sebastian/.nvm/versions/node/**)",
+      "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")",
+      "Bash(npm --version)",
+      "Bash(npm install:*)"
+    ]
+  }
+}

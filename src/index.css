@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", serif;
+
+  /* MEDLA Brand Colors */
+  --color-navy: #1A1A2E;
+  --color-gold: #C9A84C;
+  --color-cream: #F5F3EF;
+  --color-body: #3A3A4E;
+  --color-muted-text: #9A9AB0;
+
+  /* Aliases for convenience */
+  --color-accent: #C9A84C;
+  --color-section-bg: #F5F3EF;
+  --color-card-bg: #ffffff;
+  --color-muted: #E8E2D9;
+
+  /* Huspy secondary accent */
+  --color-huspy: #00C389;
+
+  --animate-ticker: ticker 120s linear infinite;
+
+  @keyframes ticker {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-body font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .ticker-container {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .ticker-content {
+    display: flex;
+    animation: var(--animate-ticker);
+  }
+}
