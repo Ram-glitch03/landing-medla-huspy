@@ -51,6 +51,54 @@ const properties = [
     beds: 3,
     baths: 2,
     sqft: 2100
+  },
+  {
+    id: 8,
+    title: "Mansión Clásica",
+    location: "Bel Air, California",
+    price: "$12,500,000",
+    description: "Elegancia atemporal con jardín privado tipo parque. Un refugio exclusivo con acabados en mármol y detalles arquitectónicos históricos.",
+    image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    country: "EE. UU.",
+    beds: 8,
+    baths: 10,
+    sqft: 12000
+  },
+  {
+    id: 9,
+    title: "Lote Frente al Mar",
+    location: "Ibiza, España",
+    price: "€6,200,000",
+    description: "Paraíso mediterráneo con muelle privado. Disfruta de la máxima privacidad con acceso exclusivo a calas escondidas.",
+    image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    country: "España",
+    beds: 5,
+    baths: 6,
+    sqft: 4500
+  },
+  {
+    id: 10,
+    title: "Eco-Villa Contemporánea",
+    location: "Tulum, México",
+    price: "$1,850,000",
+    description: "Un diseño autosustentable entre la selva y el mar. Acabados de chukum, paneles solares y piscinas privadas integradas a la naturaleza.",
+    image: "https://images.unsplash.com/photo-1613977257363-707ba9348227?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    country: "México",
+    beds: 4,
+    baths: 4,
+    sqft: 3200
+  },
+  {
+    id: 11,
+    title: "Apartamento Smart-Home",
+    location: "Dubai, EAU",
+    price: "$4,200,000",
+    description: "Controla toda tu vivienda desde tu smartphone. Vistas al Burj Khalifa con interiorismo firmado por diseñadores italianos.",
+    image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    country: "EAU",
+    beds: 3,
+    baths: 4,
+    sqft: 2800
   }
 ];
 
@@ -91,8 +139,8 @@ export default function PropertiesGrid() {
               className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 border border-muted"
             >
               <div className="aspect-[4/3] overflow-hidden relative">
-                <img 
-                  src={property.image} 
+                <img
+                  src={property.image}
                   alt={property.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -101,7 +149,7 @@ export default function PropertiesGrid() {
                   <ShieldCheck size={14} className="text-accent" /> Verificado
                 </div>
               </div>
-              
+
               <div className="p-6">
                 <div className="flex items-center gap-1 text-black/40 text-sm font-medium mb-2">
                   <MapPin size={14} />
@@ -110,7 +158,7 @@ export default function PropertiesGrid() {
                 <h3 className="text-xl font-display font-medium mb-4 group-hover:text-accent transition-colors">
                   {property.title}
                 </h3>
-                
+
                 <div className="flex justify-between items-center py-4 border-y border-muted mb-6">
                   <div className="flex items-center gap-1">
                     <Bed size={16} className="text-black/40" />
@@ -128,7 +176,7 @@ export default function PropertiesGrid() {
 
                 <div className="flex items-center justify-between">
                   <span className="text-xl font-bold text-accent">{property.price}</span>
-                  <button 
+                  <button
                     onClick={() => openModal(property)}
                     className="p-2 rounded-full border border-navy hover:bg-navy hover:text-white transition-colors"
                   >
@@ -141,7 +189,7 @@ export default function PropertiesGrid() {
         </div>
       </div>
 
-      <PropertyModal 
+      <PropertyModal
         property={selectedProperty}
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}

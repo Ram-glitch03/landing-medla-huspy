@@ -41,7 +41,7 @@ export default function Footer() {
                 <a href="#about" className="hover:text-white transition-colors">Nosotros</a>
                 <a href="#projects" className="hover:text-white transition-colors">Proyectos</a>
                 <a href="#reviews" className="hover:text-white transition-colors">Reseñas</a>
-                <a href="#contact" className="hover:text-white transition-colors">Contacto</a>
+                <a href="https://medla-asesores.com/agenda-tu-cita/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Contacto</a>
               </nav>
             </div>
             <div className="flex flex-col gap-6 col-span-2 md:col-span-1">

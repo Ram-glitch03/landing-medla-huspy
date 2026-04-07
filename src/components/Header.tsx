@@ -27,7 +27,7 @@ export default function Header() {
 
           <div className="flex items-center">
             <a 
-              href="#contact" 
+              href="https://medla-asesores.com/agenda-tu-cita/" target="_blank" rel="noopener noreferrer" 
               className="bg-navy text-white px-6 py-2.5 rounded-full font-medium hover:bg-gold hover:text-navy transition-colors"
               id="contact-btn"
             >
